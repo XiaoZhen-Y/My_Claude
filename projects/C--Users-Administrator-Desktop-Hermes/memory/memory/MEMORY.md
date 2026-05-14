@@ -1,2 +1,0 @@
-- [Chrome 默认 profile](feedback_chrome_profile.md) — browser-harness 连接 Chrome 时使用默认 profile，不传 --user-data-dir
-- [截图通过豆包识别](feedback_screenshot_workaround.md) — 模型无视觉能力时，上传截图到豆包获取文字描述

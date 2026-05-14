@@ -23,6 +23,7 @@ push_one() {
   local src="$1"
   local dst="$2"
   if [ -e "$src" ]; then
+    rm -rf "$dst"
     mkdir -p "$(dirname "$dst")"
     cp -r "$src" "$dst"
     say "push: $src -> $dst"
@@ -33,6 +34,7 @@ pull_one() {
   local src="$1"
   local dst="$2"
   if [ -e "$src" ]; then
+    rm -rf "$dst"
     mkdir -p "$(dirname "$dst")"
     cp -r "$src" "$dst"
     say "pull: $src -> $dst"
