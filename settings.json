@@ -1,0 +1,30 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
+    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED"
+  },
+  "theme": "light",
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"irm https://claude.ai/install.ps1 | iex\")",
+      "Bash(winget install:*)",
+      "Bash(claude --version)"
+    ]
+  },
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/claude-config/daily-sync.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

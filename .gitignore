@@ -1,0 +1,34 @@
+# Ignore everything by default
+*
+
+# ============================================================
+# Whitelist: root-level config files
+# ============================================================
+!.gitignore
+!sync.sh
+!daily-sync.sh
+!CLAUDE.md
+!settings.json
+!launch.json
+!scheduled_tasks.json
+
+# ============================================================
+# Whitelist: project memory
+# ============================================================
+!projects/
+!projects/**/
+!projects/**/memory/
+!projects/**/memory/**
+
+# ============================================================
+# Whitelist: skills (all)
+# ============================================================
+!skills/
+!skills/**
+
+# ============================================================
+# Whitelist: scheduled tasks
+# ============================================================
+!scheduled-tasks/
+!scheduled-tasks/**/
+!scheduled-tasks/**
