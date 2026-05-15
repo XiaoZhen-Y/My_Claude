@@ -1,0 +1,1 @@
+- [skill-manager design rules](feedback_skill-manager.md) — 远程地址固化、先读索引、分类→skill 结构
