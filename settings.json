@@ -13,20 +13,5 @@
     ]
   },
   "model": "opus[1m]",
-  "effortLevel": "high",
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash ~/claude-config/daily-sync.sh",
-            "asyncRewake": true,
-            "rewakeSummary": "配置同步冲突，需手动处理"
-          }
-        ]
-      }
-    ]
-  }
+  "effortLevel": "high"
 }
